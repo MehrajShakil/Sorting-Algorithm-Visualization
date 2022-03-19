@@ -5,7 +5,6 @@ function swap(el1, el2) {
     let temp = el1.style.height;
     el1.style.height = el2.style.height;
     el2.style.height = temp;
-    
 }
 
 // Disables sorting buttons used in conjunction with enable, so that we can disable during sorting and enable buttons after it
@@ -98,7 +97,13 @@ function createNewArray(noOfBars = 20) {
     // create multiple element div using loop and adding class 'bar col'
     for (let i = 0; i < noOfBars; i++) {
         const bar = document.createElement("div");
-        bar.style.height = `${array[i]*2}px`;
+        bar.style.height = "60px";
+        bar.style.width = "60px";
+        bar.style.background = "#000";
+        let temp = array[i];
+        let s = temp.toString();
+        bar.innerHTML = s;
+        bar.style.textAlign = "center";
         bar.classList.add('bar');
         bar.classList.add('flex-item');
         bar.classList.add(`barNo${i}`);
