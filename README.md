@@ -1,1 +1,1 @@
-# The project is about sorting Algorithm Visualization 
+# Sorting Algorithm Visualization
