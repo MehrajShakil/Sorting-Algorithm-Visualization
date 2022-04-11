@@ -42,4 +42,3 @@ inSortbtn.addEventListener('click', async function(){
     enableSizeSlider();
     enableNewArrayBtn();
 });
-
